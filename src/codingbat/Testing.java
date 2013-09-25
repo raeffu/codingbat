@@ -1,25 +1,32 @@
 package codingbat;
 
+
+// You and your date are trying to get a table at a restaurant. The parameter "you" is the stylishness of your clothes, in the range 0..10, and "date" is the stylishness of your date's clothes. The result getting the table is encoded as an int value with 0=no, 1=maybe, 2=yes. If either of you is very stylish, 8 or more, then the result is 2 (yes). With the exception that if either of you has style of 2 or less, then the result is 0 (no). Otherwise the result is 1 (maybe).
+
 public class Testing {
 
   public static void main(String[] args) {
 
     Testing test = new Testing();
 
-    System.out.println(">" + test.sum2(new int[] { 6, 3, 45 }) + "<");
-    System.out.println(">" + test.sum2(new int[] { 6, 3, 4 }) + "<");
+    System.out.println(">" + test.dateFashion(3, 2) + "<");
+    System.out.println(">" + test.dateFashion(3, 2) + "<");
+    System.out.println(">" + test.dateFashion(45, 2) + "<");
+    System.out.println(">" + test.dateFashion(3, 2) + "<");
+    System.out.println(">" + test.dateFashion(3, 2) + "<");
   }
 
-  public int sum2(int[] nums) {
-    if(nums.length >= 2){
-      return nums[0]+nums[1];
-    }
-    else if(nums.length > 0){
-      return nums[0];
-    }
-    else {
+  public int dateFashion(int you, int date) {
+
+    if(you <=2 || date <=2) {
       return 0;
     }
+    else if(you >=8 || date >=8) {
+      return 2;
+    }
+
+    else {
+      return 1;
+    }
   }
-  
 }
