@@ -9,24 +9,10 @@ public class Testing {
 
     Testing test = new Testing();
 
-    System.out.println(">" + test.dateFashion(3, 2) + "<");
-    System.out.println(">" + test.dateFashion(3, 2) + "<");
-    System.out.println(">" + test.dateFashion(45, 2) + "<");
-    System.out.println(">" + test.dateFashion(3, 2) + "<");
-    System.out.println(">" + test.dateFashion(3, 2) + "<");
+    System.out.println(">" + test.modulo(8, 10) + "<");
   }
 
-  public int dateFashion(int you, int date) {
-
-    if(you <=2 || date <=2) {
-      return 0;
-    }
-    else if(you >=8 || date >=8) {
-      return 2;
-    }
-
-    else {
-      return 1;
-    }
+  public int modulo(int a, int b) {
+    return a%b;
   }
 }
