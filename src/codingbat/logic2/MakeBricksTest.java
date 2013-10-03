@@ -25,14 +25,24 @@ public class MakeBricksTest {
   }
 
   public boolean makeBricks(int small, int big, int goal) {
-//    if (goal == small || big*5 == goal) {
-//      return true;
-//    }
-//    else if (small + (big*5) < goal) {
-//      return false;
-//    }
-//    
-//    
+    int inchBig = big*5;
+    
+    if (inchBig == 0) {
+      return goal <= small;
+    }
+    
+    if (small + inchBig < goal) {
+      return false;
+    }
+    
+    while (goal%inchBig == goal) {
+      inchBig -= 5;
+    }
+
+    if (goal%inchBig <= small) {
+      return true;
+    }
+    
     return false;
   }
 
