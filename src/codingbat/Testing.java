@@ -6,10 +6,7 @@ public class Testing {
 
   public static void main(String[] args) {
     
-    double y = 0;
-    double x= 0;
-    
-    if(1+x > Math.pow(x, Math.sqrt(2))) y=y+x;
+    System.out.println(Math.PI);
     
   }
 
