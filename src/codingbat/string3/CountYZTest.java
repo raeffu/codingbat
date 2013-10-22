@@ -14,10 +14,10 @@ package codingbat.string3;
  *  
  */
 
-public class countYZTest {
+public class CountYZTest {
 
   public static void main(String[] args) {
-    countYZTest test = new countYZTest();
+    CountYZTest test = new CountYZTest();
 
     System.out.println(">" + test.countYZ("fez day") + "<");
     System.out.println(">" + test.countYZ("day fez") + "<");

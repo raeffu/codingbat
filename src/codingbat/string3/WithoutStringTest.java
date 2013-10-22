@@ -14,10 +14,10 @@ package codingbat.string3;
  * 
  */
 
-public class withoutStringTest {
+public class WithoutStringTest {
 
   public static void main(String[] args) {
-    withoutStringTest test = new withoutStringTest();
+    WithoutStringTest test = new WithoutStringTest();
 
     System.out.println(">" + test.withoutString("Hello there", "llo") + "<");
     System.out.println(">" + test.withoutString("Hello there", "e") + "<");
