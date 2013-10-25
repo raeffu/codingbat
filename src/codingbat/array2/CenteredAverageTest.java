@@ -28,7 +28,20 @@ public class CenteredAverageTest {
   }
 
   public int centeredAverage(int[] nums) {
-    return 0;
+    int max = nums[0];
+    int min = nums[0];
+    int sum = 0;
+
+    for (int num : nums) {
+      sum += num;
+
+      if (num > max) {max = num;}
+      if (num < min) {min = num;}
+    }
+
+    sum = sum - max - min;
+
+    return sum / (nums.length - 2);
   }
 
 }
