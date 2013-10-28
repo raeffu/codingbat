@@ -10,11 +10,11 @@ package codingbat.string2;
  * 
  */
 
-public class countHiTest {
+public class CountHiTest {
 
   public static void main(String[] args) {
 
-    countHiTest test = new countHiTest();
+    CountHiTest test = new CountHiTest();
 
     System.out.println(">" + test.countHi("abc hi ho") + "<");
     System.out.println(">" + test.countHi("ABChi hi") + "<");
