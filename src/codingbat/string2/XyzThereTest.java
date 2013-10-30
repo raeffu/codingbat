@@ -20,10 +20,12 @@ public class XyzThereTest {
     System.out.println(">" + test.xyzThere("abcxyz") + "<");
     System.out.println(">" + test.xyzThere("abc.xyz") + "<");
     System.out.println(">" + test.xyzThere("xyz.abc") + "<");
+    System.out.println(">" + test.xyzThere("abc.xyzxyz") + "<");
   }
 
   public boolean xyzThere(String str) {
     String word;
+    Boolean hasXYZ = false;
 
     if (str.length() < 3) {
       return false;
@@ -31,16 +33,19 @@ public class XyzThereTest {
 
     for (int i = 0; i <= str.length() - 3; i++) {
       word = str.substring(i, i + 3);
-
+      
+//      System.out.println(word);
+      
       if (word.matches("xyz")) {
         if (i > 0 && str.substring(i - 1, i).equals(".")) {
-          return false;
+          hasXYZ = false;
+        } else {
+          hasXYZ = true;
         }
-        return true;
       }
     }
 
-    return false;
+    return hasXYZ;
   }
 
 }
