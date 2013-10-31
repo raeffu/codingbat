@@ -26,8 +26,10 @@ public class Sum13Test {
     int sum = 0;
     
     for (int i = 0; i < nums.length; i++) {
+      
       if (nums[i] != 13) {
-        if (i > 0 && nums[i-1] != 13) {
+        
+        if ((i > 0 && nums[i-1] != 13) || i==0) {
           sum += nums[i];
         }
       }
