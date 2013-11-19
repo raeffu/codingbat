@@ -13,7 +13,8 @@ public class Testing {
 
   public static void main(String[] args) {
     
-    System.out.println(Math.PI);
+    double f = 4.35;
+    System.out.println(f*100);
     
   }
 
