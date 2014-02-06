@@ -10,10 +10,10 @@ package codingbat.recursion1;
  * factorial(3) = 6
  */
 
-public class factorialTest {
+public class FactorialTest {
   
   public static void main(String[] args) {
-    factorialTest test = new factorialTest();
+    FactorialTest test = new FactorialTest();
 
     System.out.println(">" + test.factorial(1) + "<");
     System.out.println(">" + test.factorial(2) + "<");

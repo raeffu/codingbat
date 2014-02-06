@@ -14,10 +14,10 @@ package codingbat.recursion1;
  * fibonacci(2) = 1
  */
 
-public class fibonacciTest {
+public class FibonacciTest {
   
   public static void main(String[] args) {
-    fibonacciTest test = new fibonacciTest();
+    FibonacciTest test = new FibonacciTest();
 
     System.out.println(">" + test.fibonacci(0) + "<");
     System.out.println(">" + test.fibonacci(1) + "<");
